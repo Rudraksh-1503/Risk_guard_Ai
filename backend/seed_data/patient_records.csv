@@ -1,0 +1,801 @@
+patient_id,age,gender,bmi,blood_pressure,smoker,diabetes,region,admission_date,discharge_date,diagnosis,total_charges
+P10000,48,Female,30.3,Normal,No,No,North,2020-01-01,2020-01-03,Pneumonia,751.04
+P10001,22,Male,20.3,High Stage 1,No,No,North,2020-01-01,2020-01-03,Pneumonia,1186.49
+P10002,70,Male,23.3,Elevated,No,No,East,2020-01-01,2020-01-03,Cardiac,14258.21
+P10003,69,Male,25.0,Normal,No,No,North,2020-01-02,2020-01-04,Pneumonia,200.0
+P10004,42,Female,32.2,High Stage 2,No,No,North,2020-01-02,2020-01-04,Hypertension,2666.67
+P10005,4,Male,25.1,High Stage 1,No,No,Central,2020-01-03,2020-01-05,Pneumonia,972.18
+P10006,34,Female,19.6,Elevated,No,No,East,2020-01-03,2020-01-05,Hypertension,3912.71
+P10007,27,Male,19.1,Normal,Yes,No,West,2020-01-04,2020-01-06,Hypertension,11888.0
+P10008,38,Female,23.3,High Stage 1,No,No,East,2020-01-04,2020-01-06,Diabetes,9233.96
+P10009,80,Female,19.3,Normal,No,No,North,2020-01-05,2020-01-07,Hypertension,1820.5
+P10010,70,Female,31.7,High Stage 2,Yes,No,East,2020-01-05,2020-01-07,Cardiac,624.78
+P10011,65,Male,31.9,Normal,No,No,North,2020-01-06,2020-01-08,Pneumonia,2185.79
+P10012,2,Male,27.5,High Stage 1,No,No,West,2020-01-06,2020-01-08,Pneumonia,4440.33
+P10013,61,Male,26.1,High Stage 2,No,No,West,2020-01-06,2020-01-08,Hypertension,200.0
+P10014,49,Female,31.6,Normal,No,No,West,2020-01-07,2020-01-09,Hypertension,5301.08
+P10015,58,Male,31.4,Normal,No,No,South,2020-01-07,2020-01-09,Hypertension,3405.15
+P10016,39,Female,22.1,Normal,No,Yes,East,2020-01-08,2020-01-10,Pneumonia,13082.29
+P10017,48,Female,22.8,Normal,No,No,West,2020-01-08,2020-01-10,Appendicitis,7667.72
+P10018,32,Male,31.4,Elevated,No,Yes,East,2020-01-09,2020-01-11,Pneumonia,3676.1
+P10019,73,Male,29.0,Normal,No,No,Central,2020-01-09,2020-01-11,Diabetes,6051.67
+P10020,38,Male,30.8,Normal,No,No,West,2020-01-10,2020-01-12,Diabetes,2706.76
+P10021,82,Female,22.6,Normal,No,No,West,2020-01-10,2020-01-12,Fracture,401.33
+P10022,87,Male,23.4,Normal,Yes,No,West,2020-01-11,2020-01-13,Fracture,1925.45
+P10023,75,Female,30.1,High Stage 1,No,No,North,2020-01-11,2020-01-13,Hypertension,200.0
+P10024,50,Male,23.7,Normal,No,No,East,2020-01-12,2020-01-14,Fracture,285.16
+P10025,46,Male,19.1,Normal,No,No,West,2020-01-12,2020-01-14,Diabetes,1740.1
+P10026,49,Female,23.8,Normal,No,No,East,2020-01-12,2020-01-14,Diabetes,1586.9
+P10027,74,Male,26.4,Normal,No,No,East,2020-01-13,2020-01-15,Cardiac,2581.95
+P10028,82,Female,36.9,Normal,No,No,Central,2020-01-13,2020-01-15,Hypertension,10887.94
+P10029,72,Male,22.9,Normal,No,Yes,Central,2020-01-14,2020-01-16,Appendicitis,1497.42
+P10030,68,Female,27.2,Normal,No,No,South,2020-01-14,2020-01-16,Hypertension,14784.57
+P10031,43,Female,38.7,Normal,No,No,South,2020-01-15,2020-01-17,Diabetes,5242.52
+P10032,25,Male,21.5,Elevated,No,No,North,2020-01-15,2020-01-17,Cardiac,3851.77
+P10033,32,Female,31.1,Elevated,Yes,No,West,2020-01-16,2020-01-18,Diabetes,3823.63
+P10034,94,Female,23.6,High Stage 2,No,No,East,2020-01-16,2020-01-18,Hypertension,3186.56
+P10035,39,Male,29.7,Elevated,No,No,East,2020-01-17,2020-01-19,Fracture,4764.83
+P10036,46,Female,40.3,Normal,No,No,Central,2020-01-17,2020-01-19,Diabetes,7601.39
+P10037,47,Male,31.9,Normal,No,No,East,2020-01-17,2020-01-19,Pneumonia,329.22
+P10038,34,Female,28.3,High Stage 1,Yes,No,West,2020-01-18,2020-01-20,Pneumonia,5910.91
+P10039,14,Female,22.3,Elevated,No,No,South,2020-01-18,2020-01-20,Pneumonia,1396.36
+P10040,21,Male,26.5,Normal,No,No,Central,2020-01-19,2020-01-21,Hypertension,7688.58
+P10041,21,Female,24.4,High Stage 1,No,Yes,North,2020-01-19,2020-01-21,Diabetes,15665.36
+P10042,19,Female,19.5,Normal,Yes,Yes,East,2020-01-20,2020-01-22,Hypertension,7418.44
+P10043,10,Male,15.8,Normal,No,No,Central,2020-01-20,2020-01-22,Cardiac,2479.35
+P10044,88,Male,22.9,High Stage 1,No,No,West,2020-01-21,2020-01-23,Hypertension,2550.74
+P10045,7,Male,27.3,High Stage 2,No,No,North,2020-01-21,2020-01-23,Cardiac,7807.41
+P10046,12,Female,33.7,High Stage 1,No,No,Central,2020-01-22,2020-01-24,Cardiac,2676.54
+P10047,54,Male,23.4,High Stage 2,No,No,South,2020-01-22,2020-01-24,Pneumonia,6544.35
+P10048,87,Male,28.6,Normal,No,Yes,East,2020-01-23,2020-01-25,Appendicitis,3435.22
+P10049,66,Male,18.1,Normal,No,No,East,2020-01-23,2020-01-25,Cardiac,1780.01
+P10050,13,Male,23.1,Normal,Yes,No,South,2020-01-23,2020-01-25,Cardiac,473.37
+P10051,58,Male,14.0,Elevated,No,Yes,South,2020-01-24,2020-01-26,Diabetes,6437.5
+P10052,56,Male,39.8,High Stage 1,No,No,Central,2020-01-24,2020-01-26,Appendicitis,1414.57
+P10053,69,Male,28.6,Normal,No,No,West,2020-01-25,2020-01-27,Diabetes,6728.13
+P10054,28,Male,28.4,Normal,No,No,Central,2020-01-25,2020-01-27,Hypertension,2331.9
+P10055,39,Female,30.4,High Stage 2,No,No,South,2020-01-26,2020-01-28,Diabetes,1573.78
+P10056,91,Female,41.4,Normal,No,No,South,2020-01-26,2020-01-28,Cardiac,892.25
+P10057,76,Female,25.1,Normal,No,Yes,East,2020-01-27,2020-01-29,Hypertension,955.47
+P10058,25,Male,22.1,High Stage 2,No,No,West,2020-01-27,2020-01-29,Pneumonia,480.84
+P10059,71,Other,38.5,Normal,No,No,North,2020-01-28,2020-01-30,Hypertension,903.72
+P10060,81,Male,20.7,High Stage 1,No,No,South,2020-01-28,2020-01-30,Fracture,10110.27
+P10061,67,Female,34.6,Normal,No,No,East,2020-01-28,2020-01-30,Cardiac,1892.64
+P10062,59,Female,27.1,Normal,No,No,North,2020-01-29,2020-01-31,Cardiac,10244.49
+P10063,73,Male,29.9,Normal,No,No,East,2020-01-29,2020-01-31,Cardiac,2646.15
+P10064,51,Male,19.6,Normal,Yes,No,North,2020-01-30,2020-02-01,Cardiac,3899.25
+P10065,22,Female,41.8,Normal,No,No,Central,2020-01-30,2020-02-01,Pneumonia,2424.06
+P10066,46,Female,25.4,High Stage 1,No,No,East,2020-01-31,2020-02-02,Hypertension,1527.02
+P10067,54,Female,23.6,Elevated,No,Yes,North,2020-01-31,2020-02-02,Pneumonia,496.53
+P10068,72,Female,30.5,Normal,No,No,East,2020-02-01,2020-02-03,Fracture,10840.78
+P10069,73,Female,24.0,Normal,Yes,No,South,2020-02-01,2020-02-03,Diabetes,3669.61
+P10070,13,Female,29.8,Elevated,No,No,East,2020-02-02,2020-02-04,Appendicitis,3635.33
+P10071,10,Female,20.6,Normal,No,Yes,South,2020-02-02,2020-02-04,Hypertension,8637.8
+P10072,15,Female,28.3,Normal,No,No,East,2020-02-03,2020-02-05,Hypertension,1843.26
+P10073,24,Female,24.2,High Stage 2,No,No,North,2020-02-03,2020-02-05,Fracture,2834.01
+P10074,27,Male,23.2,High Stage 2,No,No,South,2020-02-03,2020-02-05,Diabetes,10150.87
+P10075,47,Female,22.3,Normal,Yes,Yes,South,2020-02-04,2020-02-06,Appendicitis,3018.32
+P10076,68,Male,32.4,Normal,No,No,West,2020-02-04,2020-02-06,Appendicitis,2398.8
+P10077,39,Female,25.6,Elevated,No,No,Central,2020-02-05,2020-02-07,Appendicitis,881.07
+P10078,43,Female,26.5,Normal,Yes,Yes,Central,2020-02-05,2020-02-07,Hypertension,833.18
+P10079,86,Male,29.8,High Stage 1,No,No,South,2020-02-06,2020-02-08,Pneumonia,2254.1
+P10080,71,Female,33.8,Normal,No,No,South,2020-02-06,2020-02-08,Cardiac,360.91
+P10081,71,Male,22.4,Normal,No,No,South,2020-02-07,2020-02-09,Cardiac,13857.83
+P10082,71,Male,28.7,Elevated,No,No,East,2020-02-07,2020-02-09,Hypertension,3886.86
+P10083,4,Male,22.5,Normal,No,No,Central,2020-02-08,2020-02-10,Diabetes,3829.82
+P10084,69,Male,26.4,Normal,No,No,South,2020-02-08,2020-02-10,Diabetes,2405.74
+P10085,44,Male,33.4,Elevated,No,No,West,2020-02-08,2020-02-10,Diabetes,7404.36
+P10086,60,Female,14.6,High Stage 2,No,No,South,2020-02-09,2020-02-11,Cardiac,5793.04
+P10087,72,Male,22.4,Normal,No,No,South,2020-02-09,2020-02-11,Hypertension,13973.8
+P10088,5,Female,26.2,Elevated,Yes,No,East,2020-02-10,2020-02-12,Pneumonia,5170.78
+P10089,63,Male,29.6,Normal,No,No,West,2020-02-10,2020-02-12,Cardiac,258.7
+P10090,84,Male,34.2,High Stage 1,No,No,Central,2020-02-11,2020-02-13,Appendicitis,7375.02
+P10091,51,Male,18.2,Normal,No,No,West,2020-02-11,2020-02-13,Fracture,2285.43
+P10092,62,Male,35.3,Normal,No,No,West,2020-02-12,2020-02-14,Pneumonia,1975.68
+P10093,9,Female,30.4,Normal,No,No,Central,2020-02-12,2020-02-14,Fracture,1027.78
+P10094,71,Female,26.2,High Stage 1,No,No,West,2020-02-13,2020-02-15,Appendicitis,5084.69
+P10095,87,Male,19.4,Normal,No,No,North,2020-02-13,2020-02-15,Cardiac,8510.26
+P10096,34,Male,24.4,Elevated,No,No,North,2020-02-14,2020-02-16,Pneumonia,1970.92
+P10097,40,Male,33.1,Normal,Yes,No,East,2020-02-14,2020-02-16,Fracture,3200.15
+P10098,49,Female,27.6,High Stage 1,No,No,North,2020-02-14,2020-02-16,Cardiac,3895.15
+P10099,14,Male,26.5,High Stage 2,No,No,West,2020-02-15,2020-02-17,Fracture,3127.61
+P10100,9,Male,22.2,Normal,No,No,West,2020-02-15,2020-02-17,Hypertension,3132.59
+P10101,8,Female,31.5,Elevated,No,No,Central,2020-02-16,2020-02-18,Diabetes,2296.52
+P10102,15,Female,26.7,Normal,No,No,North,2020-02-16,2020-02-18,Pneumonia,6179.88
+P10103,74,Male,26.2,Elevated,No,No,West,2020-02-17,2020-02-19,Fracture,4424.23
+P10104,60,Female,27.0,Normal,No,No,Central,2020-02-17,2020-02-19,Cardiac,2371.2
+P10105,58,Female,24.0,Normal,No,No,North,2020-02-18,2020-02-20,Appendicitis,2905.05
+P10106,8,Male,23.0,High Stage 1,Yes,No,West,2020-02-18,2020-02-20,Pneumonia,15486.27
+P10107,24,Female,19.1,Normal,No,No,Central,2020-02-19,2020-02-21,Cardiac,9590.15
+P10108,88,Male,24.1,Normal,No,No,North,2020-02-19,2020-02-21,Appendicitis,6677.19
+P10109,51,Male,17.6,Normal,No,No,East,2020-02-19,2020-02-21,Diabetes,3106.69
+P10110,8,Male,30.2,Elevated,No,No,North,2020-02-20,2020-02-22,Appendicitis,3247.53
+P10111,89,Female,23.8,High Stage 2,No,No,East,2020-02-20,2020-02-22,Appendicitis,2446.27
+P10112,54,Male,25.3,High Stage 1,No,No,Central,2020-02-21,2020-02-23,Cardiac,4801.48
+P10113,47,Female,27.3,High Stage 1,No,No,South,2020-02-21,2020-02-23,Hypertension,2411.79
+P10114,57,Male,23.1,High Stage 2,No,No,West,2020-02-22,2020-02-24,Hypertension,2077.88
+P10115,37,Female,21.0,Elevated,No,No,Central,2020-02-22,2020-02-24,Appendicitis,3015.35
+P10116,65,Female,28.7,Elevated,No,No,North,2020-02-23,2020-02-25,Cardiac,2307.45
+P10117,29,Male,37.9,Elevated,Yes,No,East,2020-02-23,2020-02-25,Diabetes,7391.73
+P10118,34,Female,32.5,High Stage 2,No,No,South,2020-02-24,2020-02-26,Cardiac,8220.85
+P10119,18,Female,34.5,Normal,No,No,Central,2020-02-24,2020-02-26,Hypertension,6038.87
+P10120,19,Female,20.4,Elevated,No,No,West,2020-02-25,2020-02-27,Appendicitis,2006.23
+P10121,86,Female,26.4,High Stage 1,No,No,East,2020-02-25,2020-02-27,Fracture,5454.94
+P10122,19,Female,26.4,Normal,No,No,West,2020-02-25,2020-02-27,Pneumonia,1456.47
+P10123,17,Female,35.4,High Stage 1,No,No,North,2020-02-26,2020-02-28,Cardiac,1993.46
+P10124,45,Other,32.5,High Stage 1,No,No,East,2020-02-26,2020-02-28,Pneumonia,6771.88
+P10125,6,Female,26.6,Elevated,No,No,West,2020-02-27,2020-02-29,Diabetes,1556.82
+P10126,39,Male,14.9,High Stage 1,No,No,Central,2020-02-27,2020-02-29,Cardiac,2972.81
+P10127,14,Female,21.1,Normal,No,No,North,2020-02-28,2020-03-01,Diabetes,2116.97
+P10128,25,Male,31.0,High Stage 2,Yes,No,Central,2020-02-28,2020-03-01,Pneumonia,6925.85
+P10129,18,Male,25.7,Normal,No,Yes,South,2020-02-29,2020-03-02,Diabetes,1104.39
+P10130,82,Female,26.9,Normal,No,No,Central,2020-02-29,2020-03-02,Cardiac,11325.31
+P10131,40,Male,30.9,Elevated,No,No,Central,2020-03-01,2020-03-03,Cardiac,4028.44
+P10132,1,Female,33.7,High Stage 1,No,No,West,2020-03-01,2020-03-03,Fracture,11275.44
+P10133,86,Male,23.2,High Stage 1,No,No,Central,2020-03-01,2020-03-03,Fracture,2677.22
+P10134,94,Female,30.8,Elevated,Yes,No,East,2020-03-02,2020-03-04,Fracture,2789.37
+P10135,13,Male,36.4,High Stage 1,No,Yes,West,2020-03-02,2020-03-04,Cardiac,362.51
+P10136,10,Male,35.4,Elevated,No,No,Central,2020-03-03,2020-03-05,Pneumonia,8403.74
+P10137,14,Female,24.6,High Stage 1,No,Yes,South,2020-03-03,2020-03-05,Hypertension,8075.78
+P10138,26,Female,29.1,Normal,Yes,Yes,West,2020-03-04,2020-03-06,Appendicitis,9615.95
+P10139,42,Female,31.6,High Stage 2,No,No,West,2020-03-04,2020-03-06,Fracture,251.26
+P10140,75,Female,27.6,High Stage 1,No,No,East,2020-03-05,2020-03-07,Hypertension,1206.67
+P10141,85,Female,26.1,High Stage 1,No,No,East,2020-03-05,2020-03-07,Fracture,3041.91
+P10142,81,Male,18.0,Normal,No,No,West,2020-03-06,2020-03-08,Hypertension,5697.65
+P10143,88,Male,22.7,High Stage 2,No,No,East,2020-03-06,2020-03-08,Diabetes,4244.63
+P10144,6,Male,23.7,Normal,No,Yes,East,2020-03-07,2020-03-09,Appendicitis,5980.78
+P10145,90,Male,20.6,Normal,No,No,East,2020-03-07,2020-03-09,Fracture,4328.79
+P10146,62,Female,28.1,Normal,No,Yes,East,2020-03-07,2020-03-09,Fracture,1575.55
+P10147,12,Male,32.3,High Stage 2,No,No,East,2020-03-08,2020-03-10,Fracture,1291.59
+P10148,94,Male,25.2,High Stage 2,No,No,East,2020-03-08,2020-03-10,Cardiac,768.59
+P10149,67,Male,15.4,Elevated,No,No,South,2020-03-09,2020-03-11,Diabetes,16172.88
+P10150,71,Female,26.8,High Stage 1,No,No,North,2020-03-09,2020-03-11,Cardiac,483.98
+P10151,61,Other,29.0,Elevated,No,No,East,2020-03-10,2020-03-12,Fracture,3406.09
+P10152,74,Female,28.6,Normal,No,No,East,2020-03-10,2020-03-12,Fracture,1056.67
+P10153,3,Male,23.5,Elevated,No,No,North,2020-03-11,2020-03-13,Pneumonia,4216.65
+P10154,53,Male,20.9,Normal,No,No,East,2020-03-11,2020-03-13,Appendicitis,2184.16
+P10155,64,Male,32.4,Elevated,No,No,Central,2020-03-12,2020-03-14,Fracture,5882.1
+P10156,82,Male,29.4,Normal,No,No,South,2020-03-12,2020-03-14,Pneumonia,4667.11
+P10157,66,Female,23.8,Normal,No,No,Central,2020-03-12,2020-03-14,Fracture,1017.35
+P10158,24,Female,19.2,Elevated,No,No,East,2020-03-13,2020-03-15,Appendicitis,1458.06
+P10159,62,Male,28.7,Elevated,No,No,South,2020-03-13,2020-03-15,Cardiac,3228.07
+P10160,24,Male,22.6,High Stage 1,No,No,Central,2020-03-14,2020-03-16,Cardiac,540.91
+P10161,21,Male,29.6,Elevated,No,No,Central,2020-03-14,2020-03-16,Pneumonia,2579.31
+P10162,59,Female,28.4,Normal,Yes,No,Central,2020-03-15,2020-03-17,Diabetes,1463.08
+P10163,32,Other,38.9,High Stage 1,No,No,West,2020-03-15,2020-03-17,Pneumonia,1451.49
+P10164,32,Male,27.1,Normal,No,No,West,2020-03-16,2020-03-18,Pneumonia,4000.65
+P10165,53,Female,38.5,High Stage 1,No,No,Central,2020-03-16,2020-03-18,Diabetes,1859.71
+P10166,19,Male,28.0,Normal,No,No,Central,2020-03-17,2020-03-19,Cardiac,1472.94
+P10167,14,Female,23.8,Normal,Yes,No,Central,2020-03-17,2020-03-19,Appendicitis,5201.46
+P10168,42,Male,21.7,Elevated,No,No,Central,2020-03-18,2020-03-20,Fracture,3876.44
+P10169,15,Male,22.7,High Stage 2,No,No,South,2020-03-18,2020-03-20,Hypertension,3226.74
+P10170,70,Female,29.9,Normal,No,No,Central,2020-03-18,2020-03-20,Appendicitis,8079.29
+P10171,66,Male,28.2,High Stage 2,No,No,Central,2020-03-19,2020-03-21,Diabetes,4165.04
+P10172,89,Male,17.4,Elevated,No,No,Central,2020-03-19,2020-03-21,Appendicitis,7175.36
+P10173,16,Male,33.1,Normal,Yes,No,North,2020-03-20,2020-03-22,Fracture,6017.91
+P10174,71,Male,35.6,Elevated,No,No,North,2020-03-20,2020-03-22,Appendicitis,2428.14
+P10175,2,Female,17.3,High Stage 1,No,No,Central,2020-03-21,2020-03-23,Cardiac,1348.91
+P10176,59,Male,33.1,Elevated,No,No,West,2020-03-21,2020-03-23,Hypertension,2665.59
+P10177,18,Female,36.8,Normal,No,No,East,2020-03-22,2020-03-24,Hypertension,1339.96
+P10178,68,Female,17.6,High Stage 1,No,No,West,2020-03-22,2020-03-24,Appendicitis,1569.47
+P10179,8,Male,24.9,High Stage 1,No,No,West,2020-03-23,2020-03-25,Fracture,4481.04
+P10180,4,Male,22.8,High Stage 1,No,No,North,2020-03-23,2020-03-25,Appendicitis,3387.5
+P10181,27,Female,32.9,High Stage 1,No,No,South,2020-03-23,2020-03-25,Hypertension,1140.98
+P10182,33,Female,25.2,Normal,No,No,East,2020-03-24,2020-03-26,Cardiac,2901.1
+P10183,72,Female,25.0,Elevated,No,No,North,2020-03-24,2020-03-26,Diabetes,3296.31
+P10184,19,Female,29.8,Elevated,No,No,Central,2020-03-25,2020-03-27,Hypertension,603.34
+P10185,74,Female,36.1,Normal,Yes,No,North,2020-03-25,2020-03-27,Fracture,5133.97
+P10186,47,Female,27.2,Elevated,No,No,East,2020-03-26,2020-03-28,Appendicitis,2933.29
+P10187,7,Female,24.9,Normal,Yes,Yes,North,2020-03-26,2020-03-28,Hypertension,3470.11
+P10188,90,Female,25.9,High Stage 1,No,No,North,2020-03-27,2020-03-29,Pneumonia,8868.79
+P10189,54,Female,31.1,Normal,No,No,East,2020-03-27,2020-03-29,Appendicitis,19569.99
+P10190,80,Female,20.2,High Stage 1,Yes,No,West,2020-03-28,2020-03-30,Pneumonia,1888.19
+P10191,9,Male,27.4,Normal,No,No,South,2020-03-28,2020-03-30,Hypertension,5222.56
+P10192,43,Female,22.3,High Stage 2,No,Yes,East,2020-03-29,2020-03-31,Diabetes,461.95
+P10193,18,Male,20.9,Elevated,No,No,Central,2020-03-29,2020-03-31,Pneumonia,6886.19
+P10194,49,Female,16.8,Normal,Yes,No,South,2020-03-29,2020-03-31,Pneumonia,8025.91
+P10195,74,Male,24.7,Normal,No,No,Central,2020-03-30,2020-04-01,Hypertension,3505.32
+P10196,80,Male,33.4,Elevated,No,No,Central,2020-03-30,2020-04-01,Fracture,2631.9
+P10197,92,Male,16.6,Normal,Yes,No,East,2020-03-31,2020-04-02,Hypertension,2455.84
+P10198,25,Female,30.5,High Stage 1,No,No,West,2020-03-31,2020-04-02,Pneumonia,200.0
+P10199,26,Female,23.9,High Stage 1,No,No,Central,2020-04-01,2020-04-03,Fracture,1136.41
+P10200,73,Male,21.7,Elevated,No,No,West,2020-04-01,2020-04-03,Pneumonia,2761.71
+P10201,74,Male,29.4,Normal,No,Yes,East,2020-04-02,2020-04-04,Fracture,5807.8
+P10202,32,Female,34.7,Normal,Yes,No,Central,2020-04-02,2020-04-04,Cardiac,1396.61
+P10203,33,Male,35.7,Elevated,No,No,Central,2020-04-03,2020-04-05,Hypertension,8238.39
+P10204,19,Female,29.1,Elevated,No,No,South,2020-04-03,2020-04-05,Diabetes,4595.63
+P10205,74,Male,27.1,Elevated,No,No,West,2020-04-03,2020-04-05,Hypertension,3314.7
+P10206,11,Female,29.7,Elevated,Yes,No,South,2020-04-04,2020-04-06,Cardiac,551.15
+P10207,54,Male,41.1,Elevated,No,No,West,2020-04-04,2020-04-06,Diabetes,1749.78
+P10208,37,Other,25.9,Elevated,No,No,North,2020-04-05,2020-04-07,Hypertension,9068.31
+P10209,52,Female,33.7,Elevated,No,No,South,2020-04-05,2020-04-07,Appendicitis,10147.91
+P10210,87,Female,24.2,High Stage 1,Yes,No,West,2020-04-06,2020-04-08,Cardiac,10514.59
+P10211,77,Male,22.9,Normal,No,No,West,2020-04-06,2020-04-08,Cardiac,6023.56
+P10212,86,Female,37.2,Normal,No,No,East,2020-04-07,2020-04-09,Diabetes,7850.13
+P10213,66,Male,27.5,Normal,No,No,West,2020-04-07,2020-04-09,Hypertension,1535.0
+P10214,41,Female,28.7,Normal,No,No,East,2020-04-08,2020-04-10,Diabetes,1093.43
+P10215,92,Male,30.5,Elevated,No,No,North,2020-04-08,2020-04-10,Diabetes,3303.37
+P10216,53,Male,22.6,High Stage 1,No,No,Central,2020-04-09,2020-04-11,Appendicitis,1238.53
+P10217,35,Female,25.1,High Stage 1,No,No,North,2020-04-09,2020-04-11,Fracture,848.93
+P10218,81,Male,24.0,High Stage 2,Yes,Yes,Central,2020-04-09,2020-04-11,Fracture,9887.85
+P10219,90,Female,29.3,Normal,Yes,No,Central,2020-04-10,2020-04-12,Pneumonia,12096.74
+P10220,45,Female,29.5,Normal,No,No,North,2020-04-10,2020-04-12,Fracture,1355.42
+P10221,78,Female,24.2,Normal,No,No,Central,2020-04-11,2020-04-13,Diabetes,1524.81
+P10222,47,Female,38.7,Elevated,No,No,West,2020-04-11,2020-04-13,Diabetes,474.94
+P10223,47,Male,27.3,Normal,No,Yes,West,2020-04-12,2020-04-14,Diabetes,2218.61
+P10224,50,Male,28.1,Normal,No,No,South,2020-04-12,2020-04-14,Hypertension,524.01
+P10225,48,Female,34.9,Normal,No,No,North,2020-04-13,2020-04-15,Pneumonia,11192.59
+P10226,84,Male,22.7,High Stage 1,No,No,North,2020-04-13,2020-04-15,Diabetes,7174.8
+P10227,85,Other,24.6,Normal,No,No,East,2020-04-14,2020-04-16,Appendicitis,8000.74
+P10228,75,Male,29.1,Normal,Yes,No,West,2020-04-14,2020-04-16,Fracture,200.0
+P10229,56,Male,19.4,Elevated,No,No,North,2020-04-14,2020-04-16,Fracture,200.0
+P10230,11,Male,26.2,Normal,Yes,No,South,2020-04-15,2020-04-17,Cardiac,1688.48
+P10231,32,Female,38.8,Elevated,No,No,Central,2020-04-15,2020-04-17,Appendicitis,401.45
+P10232,14,Female,37.6,Elevated,No,No,East,2020-04-16,2020-04-18,Diabetes,2034.08
+P10233,4,Female,32.4,High Stage 1,Yes,No,North,2020-04-16,2020-04-18,Hypertension,824.95
+P10234,60,Female,34.0,High Stage 1,Yes,No,Central,2020-04-17,2020-04-19,Appendicitis,5757.95
+P10235,29,Female,30.2,Normal,No,No,South,2020-04-17,2020-04-19,Diabetes,210.62
+P10236,8,Male,25.1,High Stage 1,No,No,North,2020-04-18,2020-04-20,Hypertension,200.0
+P10237,21,Male,36.5,Elevated,No,Yes,East,2020-04-18,2020-04-20,Pneumonia,200.0
+P10238,7,Female,22.3,High Stage 1,No,No,North,2020-04-19,2020-04-21,Appendicitis,200.0
+P10239,13,Female,32.8,Elevated,No,No,West,2020-04-19,2020-04-21,Pneumonia,9255.75
+P10240,47,Male,24.7,Normal,No,No,West,2020-04-20,2020-04-22,Appendicitis,6789.71
+P10241,64,Female,25.0,Elevated,No,No,Central,2020-04-20,2020-04-22,Diabetes,15333.26
+P10242,75,Male,30.5,High Stage 2,No,No,South,2020-04-20,2020-04-22,Cardiac,9052.42
+P10243,38,Female,38.7,High Stage 2,No,Yes,East,2020-04-21,2020-04-23,Diabetes,5586.74
+P10244,70,Female,35.4,Normal,No,No,West,2020-04-21,2020-04-23,Pneumonia,3804.39
+P10245,9,Male,29.4,Elevated,No,No,North,2020-04-22,2020-04-24,Diabetes,823.48
+P10246,13,Female,27.8,High Stage 1,No,No,South,2020-04-22,2020-04-24,Pneumonia,732.91
+P10247,31,Female,31.8,Normal,No,Yes,North,2020-04-23,2020-04-25,Cardiac,200.0
+P10248,60,Male,35.0,Elevated,No,No,West,2020-04-23,2020-04-25,Cardiac,728.66
+P10249,14,Male,17.8,High Stage 2,No,No,West,2020-04-24,2020-04-26,Diabetes,200.0
+P10250,1,Female,26.8,Elevated,No,No,North,2020-04-24,2020-04-26,Fracture,8469.29
+P10251,57,Male,21.7,Normal,No,Yes,North,2020-04-25,2020-04-27,Cardiac,5878.21
+P10252,39,Male,26.3,Normal,No,Yes,East,2020-04-25,2020-04-27,Diabetes,1102.55
+P10253,41,Male,20.6,Elevated,No,No,West,2020-04-25,2020-04-27,Cardiac,2588.41
+P10254,40,Male,17.6,Elevated,No,No,West,2020-04-26,2020-04-28,Pneumonia,3024.3
+P10255,88,Female,20.2,High Stage 2,No,No,East,2020-04-26,2020-04-28,Pneumonia,1156.9
+P10256,11,Female,24.5,High Stage 1,No,No,Central,2020-04-27,2020-04-29,Cardiac,2222.73
+P10257,58,Female,30.7,Normal,No,No,East,2020-04-27,2020-04-29,Cardiac,2138.41
+P10258,73,Male,23.0,High Stage 1,No,No,East,2020-04-28,2020-04-30,Cardiac,3719.86
+P10259,72,Female,22.7,Normal,No,No,South,2020-04-28,2020-04-30,Hypertension,1651.79
+P10260,9,Male,29.7,Normal,No,No,West,2020-04-29,2020-05-01,Hypertension,4973.49
+P10261,32,Male,29.1,Elevated,Yes,No,Central,2020-04-29,2020-05-01,Hypertension,2053.9
+P10262,91,Female,36.9,Elevated,No,No,South,2020-04-30,2020-05-02,Pneumonia,3271.41
+P10263,71,Male,32.6,Normal,No,No,West,2020-04-30,2020-05-02,Fracture,12644.37
+P10264,87,Male,21.9,Elevated,No,No,East,2020-05-01,2020-05-03,Diabetes,2484.66
+P10265,70,Female,23.8,High Stage 2,No,No,East,2020-05-01,2020-05-03,Appendicitis,4861.88
+P10266,7,Male,31.6,Elevated,Yes,No,East,2020-05-01,2020-05-03,Diabetes,10819.89
+P10267,94,Female,22.6,Normal,No,No,East,2020-05-02,2020-05-04,Cardiac,5975.92
+P10268,79,Female,25.7,High Stage 2,No,No,West,2020-05-02,2020-05-04,Fracture,3905.8
+P10269,63,Male,18.1,Normal,No,No,South,2020-05-03,2020-05-05,Fracture,2825.76
+P10270,1,Female,20.3,Normal,No,No,North,2020-05-03,2020-05-05,Hypertension,9744.23
+P10271,87,Male,34.4,Normal,No,Yes,South,2020-05-04,2020-05-06,Hypertension,14819.97
+P10272,84,Female,28.4,Normal,No,No,East,2020-05-04,2020-05-06,Hypertension,1854.69
+P10273,82,Male,24.0,Normal,No,No,Central,2020-05-05,2020-05-07,Diabetes,990.48
+P10274,29,Female,24.8,Normal,No,No,West,2020-05-05,2020-05-07,Hypertension,2664.68
+P10275,87,Female,36.9,Elevated,No,No,East,2020-05-06,2020-05-08,Fracture,2201.98
+P10276,1,Male,23.9,Normal,No,No,Central,2020-05-06,2020-05-08,Appendicitis,4516.81
+P10277,54,Male,30.1,Normal,No,No,North,2020-05-06,2020-05-08,Appendicitis,273.3
+P10278,73,Female,32.3,Elevated,No,No,West,2020-05-07,2020-05-09,Appendicitis,12645.45
+P10279,22,Female,35.4,Normal,No,No,Central,2020-05-07,2020-05-09,Pneumonia,2523.33
+P10280,91,Male,22.8,Elevated,No,No,West,2020-05-08,2020-05-10,Hypertension,2020.78
+P10281,55,Female,19.8,Normal,Yes,No,East,2020-05-08,2020-05-10,Cardiac,233.21
+P10282,16,Male,21.4,High Stage 1,No,No,East,2020-05-09,2020-05-11,Cardiac,214.88
+P10283,87,Female,31.5,High Stage 2,No,No,North,2020-05-09,2020-05-11,Diabetes,3275.42
+P10284,12,Female,38.5,Normal,Yes,No,North,2020-05-10,2020-05-12,Cardiac,7811.28
+P10285,92,Female,31.7,Elevated,No,Yes,North,2020-05-10,2020-05-12,Pneumonia,2166.53
+P10286,93,Female,23.9,High Stage 1,No,No,Central,2020-05-11,2020-05-13,Fracture,278.25
+P10287,89,Male,34.0,Elevated,Yes,Yes,South,2020-05-11,2020-05-13,Hypertension,2260.44
+P10288,31,Male,24.9,Normal,No,Yes,Central,2020-05-12,2020-05-14,Cardiac,2229.67
+P10289,42,Male,22.9,Normal,No,Yes,West,2020-05-12,2020-05-14,Pneumonia,3784.82
+P10290,72,Female,25.7,Elevated,Yes,No,West,2020-05-12,2020-05-14,Fracture,1808.84
+P10291,76,Male,24.3,Elevated,Yes,No,Central,2020-05-13,2020-05-15,Appendicitis,200.0
+P10292,20,Male,23.6,High Stage 1,No,No,East,2020-05-13,2020-05-15,Appendicitis,6779.19
+P10293,46,Male,34.2,Normal,Yes,No,North,2020-05-14,2020-05-16,Pneumonia,6656.92
+P10294,37,Male,24.7,Normal,No,No,Central,2020-05-14,2020-05-16,Diabetes,9839.71
+P10295,66,Female,18.8,Normal,No,No,South,2020-05-15,2020-05-17,Fracture,2441.49
+P10296,73,Female,30.7,Elevated,No,No,North,2020-05-15,2020-05-17,Pneumonia,4976.21
+P10297,41,Male,22.2,Elevated,No,No,South,2020-05-16,2020-05-18,Diabetes,1959.63
+P10298,84,Male,22.4,Normal,Yes,No,Central,2020-05-16,2020-05-18,Hypertension,3521.1
+P10299,29,Male,31.4,Elevated,No,No,East,2020-05-17,2020-05-19,Cardiac,12387.43
+P10300,72,Female,23.5,High Stage 1,No,No,East,2020-05-17,2020-05-19,Pneumonia,2081.93
+P10301,42,Female,25.0,High Stage 2,No,No,West,2020-05-17,2020-05-19,Pneumonia,2085.48
+P10302,10,Male,27.7,High Stage 1,No,No,East,2020-05-18,2020-05-20,Fracture,545.01
+P10303,29,Male,25.9,Elevated,Yes,No,North,2020-05-18,2020-05-20,Appendicitis,1542.82
+P10304,79,Female,25.1,High Stage 1,No,No,North,2020-05-19,2020-05-21,Fracture,421.48
+P10305,40,Female,14.6,Elevated,No,Yes,Central,2020-05-19,2020-05-21,Hypertension,9589.33
+P10306,75,Female,26.5,Normal,Yes,No,South,2020-05-20,2020-05-22,Appendicitis,4963.26
+P10307,64,Male,36.4,High Stage 2,No,No,South,2020-05-20,2020-05-22,Diabetes,2977.09
+P10308,39,Female,31.0,Normal,Yes,No,North,2020-05-21,2020-05-23,Appendicitis,3802.15
+P10309,19,Female,25.4,Normal,No,Yes,West,2020-05-21,2020-05-23,Fracture,625.91
+P10310,68,Male,30.1,Normal,Yes,Yes,East,2020-05-22,2020-05-24,Fracture,4464.54
+P10311,64,Male,31.0,Elevated,No,Yes,West,2020-05-22,2020-05-24,Pneumonia,5367.74
+P10312,30,Male,22.9,Elevated,No,No,North,2020-05-23,2020-05-25,Fracture,6640.62
+P10313,7,Female,34.4,Elevated,No,No,East,2020-05-23,2020-05-25,Fracture,238.24
+P10314,37,Male,28.4,Normal,No,No,East,2020-05-23,2020-05-25,Diabetes,2068.32
+P10315,1,Male,25.8,Normal,No,No,Central,2020-05-24,2020-05-26,Fracture,16918.43
+P10316,73,Female,36.2,Normal,No,No,West,2020-05-24,2020-05-26,Diabetes,4979.25
+P10317,22,Female,16.1,Normal,No,No,West,2020-05-25,2020-05-27,Fracture,1932.9
+P10318,38,Male,21.0,Normal,No,No,West,2020-05-25,2020-05-27,Cardiac,8061.55
+P10319,20,Male,31.0,Normal,No,Yes,West,2020-05-26,2020-05-28,Fracture,205.23
+P10320,86,Male,31.2,High Stage 2,No,No,South,2020-05-26,2020-05-28,Pneumonia,4187.65
+P10321,79,Male,36.6,High Stage 1,Yes,No,East,2020-05-27,2020-05-29,Hypertension,3294.73
+P10322,88,Male,15.1,Normal,No,No,Central,2020-05-27,2020-05-29,Hypertension,2374.07
+P10323,72,Female,32.2,Normal,No,No,West,2020-05-28,2020-05-30,Appendicitis,16588.89
+P10324,12,Female,20.7,High Stage 2,No,No,Central,2020-05-28,2020-05-30,Appendicitis,15170.22
+P10325,63,Female,29.8,Elevated,No,No,North,2020-05-28,2020-05-30,Appendicitis,5996.55
+P10326,43,Male,27.1,High Stage 1,No,No,Central,2020-05-29,2020-05-31,Pneumonia,2991.23
+P10327,67,Male,32.2,High Stage 1,No,No,West,2020-05-29,2020-05-31,Diabetes,4818.3
+P10328,66,Female,26.2,Normal,No,No,North,2020-05-30,2020-06-01,Hypertension,2096.33
+P10329,63,Male,33.1,Normal,No,No,Central,2020-05-30,2020-06-01,Cardiac,4764.66
+P10330,59,Female,22.9,Normal,Yes,No,Central,2020-05-31,2020-06-02,Diabetes,3388.14
+P10331,78,Female,27.1,Elevated,No,No,West,2020-05-31,2020-06-02,Cardiac,389.34
+P10332,82,Female,28.6,High Stage 2,No,Yes,Central,2020-06-01,2020-06-03,Diabetes,3266.95
+P10333,51,Female,36.7,Normal,No,No,Central,2020-06-01,2020-06-03,Pneumonia,1352.91
+P10334,1,Male,32.1,High Stage 1,Yes,No,East,2020-06-02,2020-06-04,Hypertension,16042.44
+P10335,2,Male,28.6,Elevated,No,Yes,Central,2020-06-02,2020-06-04,Appendicitis,4590.32
+P10336,4,Female,31.0,Elevated,No,Yes,East,2020-06-03,2020-06-05,Fracture,354.35
+P10337,82,Female,33.5,High Stage 1,No,No,North,2020-06-03,2020-06-05,Pneumonia,526.66
+P10338,43,Female,29.6,Elevated,Yes,No,North,2020-06-03,2020-06-05,Hypertension,5190.8
+P10339,45,Male,21.9,Elevated,No,No,West,2020-06-04,2020-06-06,Diabetes,4817.47
+P10340,27,Female,31.0,High Stage 1,No,No,North,2020-06-04,2020-06-06,Fracture,5870.41
+P10341,88,Male,27.3,Elevated,No,Yes,Central,2020-06-05,2020-06-07,Hypertension,200.0
+P10342,23,Male,25.6,Normal,Yes,No,Central,2020-06-05,2020-06-07,Appendicitis,3448.04
+P10343,84,Female,23.2,Elevated,No,No,North,2020-06-06,2020-06-08,Fracture,1123.57
+P10344,63,Male,30.7,Elevated,No,No,North,2020-06-06,2020-06-08,Appendicitis,3161.15
+P10345,38,Male,30.3,High Stage 1,Yes,Yes,North,2020-06-07,2020-06-09,Diabetes,7629.45
+P10346,63,Female,22.2,Normal,No,No,West,2020-06-07,2020-06-09,Hypertension,16236.65
+P10347,88,Male,21.4,Normal,No,No,South,2020-06-08,2020-06-10,Cardiac,4668.13
+P10348,7,Female,37.9,Normal,No,No,West,2020-06-08,2020-06-10,Diabetes,1920.13
+P10349,6,Male,32.2,High Stage 1,No,No,Central,2020-06-08,2020-06-10,Cardiac,3808.24
+P10350,17,Female,28.0,Elevated,No,No,West,2020-06-09,2020-06-11,Appendicitis,7057.93
+P10351,63,Male,30.8,Normal,No,No,Central,2020-06-09,2020-06-11,Pneumonia,339.52
+P10352,50,Female,24.9,Elevated,Yes,No,East,2020-06-10,2020-06-12,Pneumonia,6536.76
+P10353,65,Male,26.6,Elevated,No,Yes,Central,2020-06-10,2020-06-12,Pneumonia,4576.54
+P10354,39,Female,27.6,Elevated,No,No,West,2020-06-11,2020-06-13,Fracture,1606.76
+P10355,79,Female,32.8,Normal,Yes,No,East,2020-06-11,2020-06-13,Cardiac,3866.59
+P10356,45,Male,19.7,High Stage 1,No,Yes,South,2020-06-12,2020-06-14,Hypertension,6105.76
+P10357,45,Female,21.9,Normal,No,Yes,West,2020-06-12,2020-06-14,Appendicitis,6591.64
+P10358,46,Male,20.8,Normal,No,No,West,2020-06-13,2020-06-15,Pneumonia,1761.87
+P10359,23,Male,32.2,Elevated,Yes,No,North,2020-06-13,2020-06-15,Hypertension,310.61
+P10360,92,Male,26.9,Normal,No,No,South,2020-06-14,2020-06-16,Pneumonia,2126.47
+P10361,5,Female,22.5,Normal,No,No,Central,2020-06-14,2020-06-16,Cardiac,2124.65
+P10362,3,Female,26.3,Normal,No,Yes,North,2020-06-14,2020-06-16,Diabetes,10857.0
+P10363,44,Female,24.0,Elevated,No,Yes,Central,2020-06-15,2020-06-17,Pneumonia,24295.33
+P10364,65,Male,19.6,High Stage 1,No,No,North,2020-06-15,2020-06-17,Fracture,10601.79
+P10365,43,Male,34.4,High Stage 1,No,No,East,2020-06-16,2020-06-18,Hypertension,371.17
+P10366,75,Female,26.7,Normal,No,No,South,2020-06-16,2020-06-18,Hypertension,2036.75
+P10367,34,Female,34.6,Normal,No,No,North,2020-06-17,2020-06-19,Diabetes,4174.97
+P10368,22,Male,19.5,High Stage 2,No,No,South,2020-06-17,2020-06-19,Pneumonia,9153.61
+P10369,60,Male,30.3,Normal,No,No,Central,2020-06-18,2020-06-20,Appendicitis,1699.03
+P10370,23,Other,19.6,High Stage 1,No,No,South,2020-06-18,2020-06-20,Hypertension,1421.63
+P10371,50,Male,40.9,Normal,No,Yes,Central,2020-06-19,2020-06-21,Hypertension,15193.04
+P10372,60,Male,18.0,Elevated,No,No,West,2020-06-19,2020-06-21,Cardiac,7532.8
+P10373,11,Male,37.4,Elevated,Yes,No,Central,2020-06-19,2020-06-21,Cardiac,1492.79
+P10374,22,Male,27.4,Elevated,No,No,East,2020-06-20,2020-06-22,Pneumonia,200.0
+P10375,5,Male,26.5,Elevated,No,Yes,East,2020-06-20,2020-06-22,Appendicitis,200.0
+P10376,20,Male,30.7,Normal,No,No,North,2020-06-21,2020-06-23,Diabetes,3291.8
+P10377,84,Male,22.3,Normal,Yes,No,South,2020-06-21,2020-06-23,Hypertension,6369.31
+P10378,2,Male,31.8,Elevated,No,No,East,2020-06-22,2020-06-24,Cardiac,2428.26
+P10379,70,Male,32.2,High Stage 1,No,No,South,2020-06-22,2020-06-24,Diabetes,6828.69
+P10380,17,Male,27.6,Elevated,No,No,North,2020-06-23,2020-06-25,Fracture,6880.71
+P10381,44,Female,28.9,Elevated,No,No,East,2020-06-23,2020-06-25,Pneumonia,3097.27
+P10382,1,Male,38.1,High Stage 2,No,No,Central,2020-06-24,2020-06-26,Pneumonia,209.58
+P10383,47,Male,31.1,Normal,Yes,No,Central,2020-06-24,2020-06-26,Hypertension,1706.24
+P10384,88,Female,23.2,Normal,No,No,South,2020-06-25,2020-06-27,Pneumonia,5787.31
+P10385,11,Female,31.6,Normal,No,No,North,2020-06-25,2020-06-27,Pneumonia,4195.78
+P10386,30,Female,24.5,High Stage 1,No,No,North,2020-06-25,2020-06-27,Appendicitis,3219.83
+P10387,25,Male,23.5,Normal,No,No,West,2020-06-26,2020-06-28,Cardiac,3224.01
+P10388,67,Female,30.3,Normal,No,No,West,2020-06-26,2020-06-28,Appendicitis,13825.2
+P10389,78,Female,21.9,Normal,Yes,No,Central,2020-06-27,2020-06-29,Pneumonia,4577.2
+P10390,26,Male,27.8,Normal,No,No,East,2020-06-27,2020-06-29,Cardiac,9636.12
+P10391,12,Male,31.2,Normal,No,No,South,2020-06-28,2020-06-30,Fracture,361.64
+P10392,84,Male,38.0,Normal,No,No,North,2020-06-28,2020-06-30,Hypertension,1646.64
+P10393,10,Male,31.0,Normal,No,No,East,2020-06-29,2020-07-01,Cardiac,1493.09
+P10394,81,Male,19.4,Elevated,No,No,South,2020-06-29,2020-07-01,Cardiac,1357.38
+P10395,53,Male,20.3,Normal,Yes,Yes,West,2020-06-30,2020-07-02,Cardiac,523.34
+P10396,74,Female,37.0,Normal,No,No,West,2020-06-30,2020-07-02,Cardiac,3741.7
+P10397,79,Female,24.0,Normal,No,No,East,2020-06-30,2020-07-02,Cardiac,8669.63
+P10398,66,Male,19.2,Elevated,Yes,No,West,2020-07-01,2020-07-03,Appendicitis,6442.17
+P10399,36,Male,22.0,Elevated,Yes,No,East,2020-07-01,2020-07-03,Hypertension,2578.48
+P10400,31,Female,31.9,Normal,Yes,No,West,2020-07-02,2020-07-04,Appendicitis,7837.52
+P10401,61,Male,28.1,Normal,No,No,West,2020-07-02,2020-07-04,Hypertension,808.5
+P10402,49,Female,31.1,Normal,Yes,No,North,2020-07-03,2020-07-05,Hypertension,942.14
+P10403,85,Female,27.3,High Stage 1,No,No,North,2020-07-03,2020-07-05,Pneumonia,703.84
+P10404,72,Female,21.4,High Stage 2,No,No,East,2020-07-04,2020-07-06,Cardiac,3227.43
+P10405,84,Male,17.7,Elevated,No,No,West,2020-07-04,2020-07-06,Diabetes,3766.21
+P10406,38,Female,22.9,High Stage 2,No,No,East,2020-07-05,2020-07-07,Hypertension,200.0
+P10407,44,Male,28.2,Normal,No,No,Central,2020-07-05,2020-07-07,Pneumonia,200.0
+P10408,83,Male,21.0,Elevated,No,No,Central,2020-07-06,2020-07-08,Fracture,1803.67
+P10409,28,Female,32.9,Elevated,No,No,North,2020-07-06,2020-07-08,Cardiac,230.46
+P10410,78,Male,22.0,Normal,No,No,West,2020-07-06,2020-07-08,Diabetes,6120.85
+P10411,54,Male,18.4,High Stage 1,No,No,North,2020-07-07,2020-07-09,Cardiac,2940.15
+P10412,40,Female,27.5,Elevated,No,No,West,2020-07-07,2020-07-09,Diabetes,1113.49
+P10413,87,Male,31.7,High Stage 1,No,No,North,2020-07-08,2020-07-10,Fracture,1391.5
+P10414,25,Male,35.7,Normal,No,No,North,2020-07-08,2020-07-10,Appendicitis,2434.2
+P10415,65,Female,18.6,Normal,No,No,West,2020-07-09,2020-07-11,Cardiac,200.0
+P10416,34,Male,35.3,Normal,No,Yes,South,2020-07-09,2020-07-11,Fracture,6280.42
+P10417,90,Female,28.5,Normal,No,No,South,2020-07-10,2020-07-12,Pneumonia,1256.32
+P10418,52,Female,24.1,Normal,No,No,East,2020-07-10,2020-07-12,Pneumonia,476.38
+P10419,55,Female,31.2,Normal,No,No,East,2020-07-11,2020-07-13,Pneumonia,1467.82
+P10420,30,Male,35.0,Normal,No,No,West,2020-07-11,2020-07-13,Appendicitis,4876.36
+P10421,2,Female,18.3,High Stage 1,Yes,No,West,2020-07-11,2020-07-13,Hypertension,534.68
+P10422,94,Male,25.1,Elevated,Yes,No,Central,2020-07-12,2020-07-14,Cardiac,406.7
+P10423,43,Male,24.5,Normal,No,No,East,2020-07-12,2020-07-14,Hypertension,3210.04
+P10424,63,Male,30.9,Normal,No,No,Central,2020-07-13,2020-07-15,Diabetes,1346.27
+P10425,85,Female,35.5,Elevated,No,No,West,2020-07-13,2020-07-15,Appendicitis,200.0
+P10426,34,Male,27.9,Normal,No,No,North,2020-07-14,2020-07-16,Diabetes,9301.15
+P10427,4,Female,25.9,Normal,No,No,Central,2020-07-14,2020-07-16,Pneumonia,5423.01
+P10428,74,Female,29.9,Elevated,No,No,East,2020-07-15,2020-07-17,Hypertension,24583.36
+P10429,59,Male,26.2,Normal,No,No,East,2020-07-15,2020-07-17,Appendicitis,4320.0
+P10430,61,Female,15.6,Normal,No,No,Central,2020-07-16,2020-07-18,Diabetes,7926.61
+P10431,36,Male,30.3,High Stage 2,No,No,Central,2020-07-16,2020-07-18,Hypertension,4454.64
+P10432,86,Male,32.9,Elevated,No,No,Central,2020-07-17,2020-07-19,Hypertension,1124.48
+P10433,38,Male,33.4,High Stage 2,No,No,East,2020-07-17,2020-07-19,Diabetes,15745.24
+P10434,4,Female,21.1,Elevated,No,No,East,2020-07-17,2020-07-19,Appendicitis,10461.02
+P10435,54,Male,30.8,Normal,No,No,East,2020-07-18,2020-07-20,Hypertension,291.29
+P10436,74,Female,35.9,Elevated,No,No,South,2020-07-18,2020-07-20,Pneumonia,3047.67
+P10437,39,Male,41.4,High Stage 1,Yes,No,South,2020-07-19,2020-07-21,Pneumonia,539.23
+P10438,43,Female,30.1,High Stage 2,No,No,South,2020-07-19,2020-07-21,Diabetes,3184.99
+P10439,87,Male,32.9,Elevated,No,Yes,West,2020-07-20,2020-07-22,Pneumonia,2874.12
+P10440,56,Male,22.0,Normal,No,No,South,2020-07-20,2020-07-22,Diabetes,6882.99
+P10441,29,Male,21.3,Elevated,No,No,West,2020-07-21,2020-07-23,Fracture,4574.12
+P10442,34,Male,32.9,Normal,No,No,South,2020-07-21,2020-07-23,Hypertension,3542.13
+P10443,72,Male,16.3,Normal,No,Yes,Central,2020-07-22,2020-07-24,Hypertension,7509.39
+P10444,71,Female,28.4,Normal,Yes,Yes,East,2020-07-22,2020-07-24,Hypertension,8174.9
+P10445,9,Male,35.4,Normal,No,Yes,East,2020-07-22,2020-07-24,Hypertension,10659.92
+P10446,73,Male,31.4,Normal,Yes,No,Central,2020-07-23,2020-07-25,Fracture,3609.95
+P10447,32,Male,31.4,High Stage 2,Yes,No,Central,2020-07-23,2020-07-25,Diabetes,3157.34
+P10448,13,Female,27.2,Elevated,No,No,South,2020-07-24,2020-07-26,Diabetes,7461.81
+P10449,15,Male,25.2,Elevated,No,No,South,2020-07-24,2020-07-26,Hypertension,3321.82
+P10450,83,Male,39.4,High Stage 1,No,No,East,2020-07-25,2020-07-27,Appendicitis,4631.11
+P10451,21,Male,34.3,Normal,No,No,West,2020-07-25,2020-07-27,Cardiac,3306.64
+P10452,49,Female,32.2,Elevated,No,No,Central,2020-07-26,2020-07-28,Appendicitis,11057.03
+P10453,54,Male,27.7,High Stage 1,No,No,South,2020-07-26,2020-07-28,Diabetes,9165.64
+P10454,47,Male,24.3,Normal,No,No,East,2020-07-27,2020-07-29,Appendicitis,2011.99
+P10455,33,Female,33.4,Normal,Yes,No,North,2020-07-27,2020-07-29,Diabetes,4646.48
+P10456,3,Other,25.8,High Stage 1,No,No,West,2020-07-28,2020-07-30,Diabetes,4745.99
+P10457,5,Male,27.9,High Stage 1,Yes,No,East,2020-07-28,2020-07-30,Appendicitis,1261.18
+P10458,46,Female,30.9,Normal,No,No,West,2020-07-28,2020-07-30,Diabetes,3979.1
+P10459,82,Female,28.7,Elevated,No,No,South,2020-07-29,2020-07-31,Cardiac,7869.05
+P10460,80,Female,36.0,Elevated,No,No,East,2020-07-29,2020-07-31,Cardiac,1243.65
+P10461,64,Male,20.2,High Stage 2,No,No,North,2020-07-30,2020-08-01,Pneumonia,9799.55
+P10462,27,Female,27.9,High Stage 1,No,No,South,2020-07-30,2020-08-01,Pneumonia,3016.85
+P10463,90,Male,39.3,Normal,Yes,No,South,2020-07-31,2020-08-02,Diabetes,5188.57
+P10464,36,Female,32.4,Elevated,No,No,East,2020-07-31,2020-08-02,Pneumonia,801.69
+P10465,76,Female,26.4,High Stage 2,Yes,No,Central,2020-08-01,2020-08-03,Fracture,9473.04
+P10466,13,Female,31.9,Normal,Yes,No,West,2020-08-01,2020-08-03,Pneumonia,1156.06
+P10467,53,Female,27.2,High Stage 1,No,No,Central,2020-08-02,2020-08-04,Hypertension,869.72
+P10468,21,Male,35.6,Elevated,No,No,South,2020-08-02,2020-08-04,Fracture,1775.8
+P10469,44,Male,32.0,Normal,Yes,No,Central,2020-08-02,2020-08-04,Hypertension,960.66
+P10470,74,Female,22.7,Elevated,Yes,Yes,West,2020-08-03,2020-08-05,Fracture,7371.33
+P10471,89,Male,28.8,Normal,No,No,North,2020-08-03,2020-08-05,Appendicitis,1604.72
+P10472,7,Female,29.8,Normal,No,No,Central,2020-08-04,2020-08-06,Hypertension,1201.91
+P10473,40,Female,30.1,High Stage 1,No,No,North,2020-08-04,2020-08-06,Appendicitis,5530.28
+P10474,7,Female,29.3,Elevated,No,No,Central,2020-08-05,2020-08-07,Appendicitis,1290.11
+P10475,52,Female,30.6,High Stage 2,No,No,South,2020-08-05,2020-08-07,Diabetes,2755.22
+P10476,94,Male,29.8,Normal,Yes,No,West,2020-08-06,2020-08-08,Diabetes,1209.97
+P10477,32,Male,23.5,High Stage 1,No,No,West,2020-08-06,2020-08-08,Appendicitis,2155.41
+P10478,36,Female,25.0,Normal,No,No,North,2020-08-07,2020-08-09,Appendicitis,10866.31
+P10479,27,Male,26.1,High Stage 1,No,No,Central,2020-08-07,2020-08-09,Pneumonia,5215.5
+P10480,80,Female,28.0,High Stage 1,No,No,Central,2020-08-08,2020-08-10,Hypertension,631.62
+P10481,80,Male,26.1,High Stage 1,Yes,No,East,2020-08-08,2020-08-10,Pneumonia,1369.52
+P10482,77,Female,33.6,Elevated,Yes,No,South,2020-08-08,2020-08-10,Diabetes,5937.91
+P10483,24,Male,22.2,Normal,No,No,East,2020-08-09,2020-08-11,Diabetes,1470.62
+P10484,21,Female,18.0,High Stage 2,No,No,West,2020-08-09,2020-08-11,Pneumonia,8200.82
+P10485,14,Male,38.3,Normal,No,No,North,2020-08-10,2020-08-12,Cardiac,867.92
+P10486,18,Male,23.0,Normal,No,No,North,2020-08-10,2020-08-12,Diabetes,1231.51
+P10487,69,Male,33.6,Normal,No,No,West,2020-08-11,2020-08-13,Diabetes,3454.99
+P10488,52,Male,30.8,High Stage 1,Yes,No,South,2020-08-11,2020-08-13,Diabetes,510.88
+P10489,80,Other,23.2,High Stage 1,Yes,No,Central,2020-08-12,2020-08-14,Diabetes,3139.65
+P10490,62,Male,26.8,High Stage 1,No,No,East,2020-08-12,2020-08-14,Cardiac,990.69
+P10491,88,Male,25.9,Elevated,No,No,West,2020-08-13,2020-08-15,Hypertension,7449.05
+P10492,5,Male,29.5,Elevated,Yes,No,South,2020-08-13,2020-08-15,Diabetes,3829.86
+P10493,63,Female,23.3,High Stage 2,No,No,West,2020-08-13,2020-08-15,Pneumonia,4344.63
+P10494,12,Male,26.5,Elevated,Yes,No,South,2020-08-14,2020-08-16,Fracture,11680.71
+P10495,33,Female,27.3,Normal,No,No,East,2020-08-14,2020-08-16,Cardiac,200.0
+P10496,43,Other,33.6,High Stage 2,No,No,North,2020-08-15,2020-08-17,Pneumonia,4855.67
+P10497,49,Male,25.2,High Stage 2,Yes,No,East,2020-08-15,2020-08-17,Hypertension,4501.29
+P10498,20,Female,22.1,Elevated,No,No,West,2020-08-16,2020-08-18,Fracture,7964.16
+P10499,18,Female,24.5,Elevated,No,No,South,2020-08-16,2020-08-18,Hypertension,200.0
+P10500,14,Female,29.5,High Stage 2,No,No,North,2020-08-17,2020-08-19,Fracture,7667.76
+P10501,20,Female,17.8,High Stage 1,No,No,Central,2020-08-17,2020-08-19,Cardiac,428.79
+P10502,65,Female,34.1,Normal,Yes,No,South,2020-08-18,2020-08-20,Fracture,3074.41
+P10503,85,Male,27.6,High Stage 2,No,No,West,2020-08-18,2020-08-20,Pneumonia,1389.95
+P10504,33,Female,29.9,High Stage 1,No,Yes,West,2020-08-19,2020-08-21,Fracture,12459.77
+P10505,80,Female,28.7,High Stage 1,No,No,South,2020-08-19,2020-08-21,Cardiac,599.69
+P10506,77,Male,23.8,Normal,Yes,No,South,2020-08-19,2020-08-21,Pneumonia,391.89
+P10507,27,Male,21.5,Normal,No,No,East,2020-08-20,2020-08-22,Appendicitis,8892.48
+P10508,19,Male,23.6,Normal,No,No,East,2020-08-20,2020-08-22,Appendicitis,1601.88
+P10509,36,Male,19.2,Normal,No,Yes,North,2020-08-21,2020-08-23,Appendicitis,393.41
+P10510,11,Male,29.4,Elevated,No,No,North,2020-08-21,2020-08-23,Cardiac,6350.32
+P10511,91,Female,26.6,High Stage 1,No,No,North,2020-08-22,2020-08-24,Fracture,3316.06
+P10512,77,Female,19.1,Elevated,No,No,South,2020-08-22,2020-08-24,Hypertension,6638.2
+P10513,37,Female,24.1,Normal,No,No,North,2020-08-23,2020-08-25,Diabetes,1141.59
+P10514,48,Female,31.1,Normal,No,No,West,2020-08-23,2020-08-25,Diabetes,5974.99
+P10515,31,Male,34.6,High Stage 1,No,No,Central,2020-08-24,2020-08-26,Pneumonia,2124.17
+P10516,1,Male,20.4,High Stage 1,No,Yes,West,2020-08-24,2020-08-26,Hypertension,6593.99
+P10517,19,Male,39.4,Normal,No,No,South,2020-08-24,2020-08-26,Fracture,1045.15
+P10518,5,Female,22.2,Normal,No,No,South,2020-08-25,2020-08-27,Appendicitis,200.0
+P10519,39,Female,18.1,Normal,No,No,Central,2020-08-25,2020-08-27,Fracture,2609.9
+P10520,40,Female,37.2,Elevated,No,No,North,2020-08-26,2020-08-28,Fracture,977.25
+P10521,35,Male,21.8,High Stage 1,Yes,No,South,2020-08-26,2020-08-28,Pneumonia,200.0
+P10522,65,Female,35.9,High Stage 1,No,No,East,2020-08-27,2020-08-29,Hypertension,200.0
+P10523,70,Male,23.8,High Stage 1,No,Yes,East,2020-08-27,2020-08-29,Hypertension,1750.74
+P10524,52,Male,25.9,High Stage 1,No,No,Central,2020-08-28,2020-08-30,Appendicitis,4255.08
+P10525,33,Female,20.3,Elevated,No,No,Central,2020-08-28,2020-08-30,Pneumonia,6295.7
+P10526,33,Female,34.5,Normal,No,No,Central,2020-08-29,2020-08-31,Appendicitis,1374.71
+P10527,44,Other,33.8,Normal,Yes,No,South,2020-08-29,2020-08-31,Fracture,3052.68
+P10528,69,Female,23.9,Normal,No,No,North,2020-08-30,2020-09-01,Diabetes,2130.84
+P10529,31,Female,27.1,Normal,No,No,Central,2020-08-30,2020-09-01,Appendicitis,6701.07
+P10530,68,Female,31.1,Normal,Yes,No,North,2020-08-30,2020-09-01,Appendicitis,4544.65
+P10531,31,Female,24.9,Normal,No,No,West,2020-08-31,2020-09-02,Hypertension,3107.42
+P10532,52,Female,35.0,Normal,No,No,Central,2020-08-31,2020-09-02,Cardiac,757.14
+P10533,24,Female,26.9,High Stage 1,No,No,North,2020-09-01,2020-09-03,Pneumonia,1035.7
+P10534,9,Female,24.6,Elevated,No,Yes,West,2020-09-01,2020-09-03,Diabetes,2019.16
+P10535,47,Female,18.8,Normal,No,No,Central,2020-09-02,2020-09-04,Fracture,2502.87
+P10536,67,Male,20.4,Normal,No,No,Central,2020-09-02,2020-09-04,Pneumonia,11054.34
+P10537,41,Female,30.7,Elevated,No,No,South,2020-09-03,2020-09-05,Hypertension,1970.31
+P10538,74,Male,28.8,High Stage 2,No,No,South,2020-09-03,2020-09-05,Hypertension,1765.74
+P10539,6,Female,32.0,Normal,No,No,South,2020-09-04,2020-09-06,Fracture,4265.38
+P10540,5,Female,24.4,High Stage 1,No,No,East,2020-09-04,2020-09-06,Cardiac,1627.28
+P10541,88,Male,18.5,High Stage 2,No,No,Central,2020-09-04,2020-09-06,Fracture,588.32
+P10542,54,Female,24.8,High Stage 1,No,No,Central,2020-09-05,2020-09-07,Cardiac,5094.63
+P10543,33,Female,38.7,Elevated,Yes,No,South,2020-09-05,2020-09-07,Appendicitis,1992.06
+P10544,61,Male,22.2,Normal,No,No,East,2020-09-06,2020-09-08,Cardiac,1333.94
+P10545,72,Female,27.3,Normal,No,No,West,2020-09-06,2020-09-08,Hypertension,7368.48
+P10546,83,Male,14.2,High Stage 1,No,No,West,2020-09-07,2020-09-09,Cardiac,5474.33
+P10547,86,Female,24.6,High Stage 2,No,Yes,North,2020-09-07,2020-09-09,Appendicitis,6885.51
+P10548,34,Female,25.2,Elevated,No,No,Central,2020-09-08,2020-09-10,Cardiac,5533.77
+P10549,2,Male,29.3,Normal,No,No,Central,2020-09-08,2020-09-10,Hypertension,6747.33
+P10550,39,Male,25.8,Normal,Yes,No,West,2020-09-09,2020-09-11,Diabetes,7898.82
+P10551,12,Male,19.1,Normal,No,Yes,East,2020-09-09,2020-09-11,Pneumonia,1494.82
+P10552,49,Female,23.8,High Stage 2,No,No,West,2020-09-10,2020-09-12,Pneumonia,1230.84
+P10553,18,Male,26.4,Normal,No,No,North,2020-09-10,2020-09-12,Pneumonia,16790.3
+P10554,64,Female,22.0,Normal,Yes,Yes,South,2020-09-10,2020-09-12,Cardiac,3122.7
+P10555,84,Male,22.8,Elevated,No,No,Central,2020-09-11,2020-09-13,Hypertension,4958.9
+P10556,19,Female,33.0,Normal,No,No,South,2020-09-11,2020-09-13,Diabetes,2368.95
+P10557,52,Female,24.1,Normal,No,No,West,2020-09-12,2020-09-14,Hypertension,429.85
+P10558,90,Female,29.9,Normal,No,No,East,2020-09-12,2020-09-14,Pneumonia,8815.32
+P10559,30,Female,26.5,Elevated,No,No,West,2020-09-13,2020-09-15,Diabetes,6706.65
+P10560,75,Female,20.7,Normal,No,No,Central,2020-09-13,2020-09-15,Pneumonia,4691.85
+P10561,5,Male,25.7,Normal,No,No,East,2020-09-14,2020-09-16,Fracture,3700.68
+P10562,60,Male,29.1,Elevated,No,No,South,2020-09-14,2020-09-16,Diabetes,4473.04
+P10563,4,Male,37.1,High Stage 1,No,No,West,2020-09-15,2020-09-17,Fracture,3134.57
+P10564,7,Male,23.3,Elevated,Yes,No,South,2020-09-15,2020-09-17,Pneumonia,2334.45
+P10565,55,Male,27.0,Elevated,No,No,South,2020-09-15,2020-09-17,Cardiac,10221.45
+P10566,83,Female,32.5,Elevated,No,No,North,2020-09-16,2020-09-18,Diabetes,2645.96
+P10567,67,Female,34.4,High Stage 1,No,Yes,East,2020-09-16,2020-09-18,Diabetes,2421.88
+P10568,39,Female,23.9,Normal,No,No,West,2020-09-17,2020-09-19,Cardiac,861.61
+P10569,37,Male,26.6,Normal,No,No,South,2020-09-17,2020-09-19,Cardiac,5197.86
+P10570,45,Female,33.6,High Stage 1,No,Yes,West,2020-09-18,2020-09-20,Cardiac,4816.2
+P10571,28,Female,30.3,Normal,No,No,East,2020-09-18,2020-09-20,Cardiac,5570.61
+P10572,2,Male,33.2,Normal,No,No,South,2020-09-19,2020-09-21,Diabetes,200.0
+P10573,76,Female,33.9,Normal,No,No,North,2020-09-19,2020-09-21,Diabetes,9111.09
+P10574,50,Male,30.5,High Stage 1,No,No,Central,2020-09-20,2020-09-22,Pneumonia,1270.51
+P10575,82,Male,28.3,High Stage 1,No,No,Central,2020-09-20,2020-09-22,Appendicitis,7514.5
+P10576,55,Male,23.8,Normal,No,No,East,2020-09-21,2020-09-23,Appendicitis,1744.37
+P10577,37,Male,26.2,Normal,No,No,South,2020-09-21,2020-09-23,Cardiac,7412.71
+P10578,6,Male,26.5,Normal,Yes,No,East,2020-09-21,2020-09-23,Cardiac,2314.32
+P10579,71,Female,34.1,Normal,Yes,No,East,2020-09-22,2020-09-24,Diabetes,3382.57
+P10580,57,Male,28.5,Normal,Yes,No,South,2020-09-22,2020-09-24,Diabetes,4437.84
+P10581,82,Male,28.5,Normal,Yes,No,West,2020-09-23,2020-09-25,Pneumonia,3488.6
+P10582,24,Female,22.0,High Stage 1,No,Yes,South,2020-09-23,2020-09-25,Diabetes,1001.58
+P10583,36,Female,34.1,High Stage 2,No,No,North,2020-09-24,2020-09-26,Appendicitis,2118.75
+P10584,23,Male,23.3,Normal,No,No,North,2020-09-24,2020-09-26,Appendicitis,2190.65
+P10585,16,Female,25.9,Normal,No,No,South,2020-09-25,2020-09-27,Appendicitis,752.32
+P10586,84,Male,34.7,Elevated,Yes,No,Central,2020-09-25,2020-09-27,Hypertension,5193.66
+P10587,35,Male,32.4,Normal,Yes,No,South,2020-09-26,2020-09-28,Appendicitis,200.0
+P10588,1,Female,22.8,Normal,Yes,No,Central,2020-09-26,2020-09-28,Diabetes,767.63
+P10589,6,Female,21.6,Normal,No,No,North,2020-09-26,2020-09-28,Fracture,1707.35
+P10590,32,Female,26.4,Elevated,No,No,Central,2020-09-27,2020-09-29,Pneumonia,17348.89
+P10591,4,Male,24.3,Normal,No,No,Central,2020-09-27,2020-09-29,Hypertension,1605.64
+P10592,84,Female,19.4,Normal,Yes,No,North,2020-09-28,2020-09-30,Appendicitis,284.82
+P10593,78,Male,23.4,High Stage 1,No,No,East,2020-09-28,2020-09-30,Appendicitis,5011.6
+P10594,86,Male,14.0,Normal,No,No,West,2020-09-29,2020-10-01,Fracture,8330.18
+P10595,81,Female,32.5,High Stage 1,No,No,East,2020-09-29,2020-10-01,Fracture,1586.8
+P10596,5,Female,32.1,Elevated,No,No,Central,2020-09-30,2020-10-02,Diabetes,1115.53
+P10597,61,Female,35.3,Normal,Yes,No,North,2020-09-30,2020-10-02,Pneumonia,200.0
+P10598,81,Male,29.4,Normal,No,No,East,2020-10-01,2020-10-03,Cardiac,2476.46
+P10599,81,Female,25.0,High Stage 1,No,No,East,2020-10-01,2020-10-03,Fracture,4226.12
+P10600,44,Female,33.1,Normal,Yes,No,West,2020-10-02,2020-10-04,Cardiac,2966.36
+P10601,88,Female,23.6,Normal,No,No,South,2020-10-02,2020-10-04,Fracture,3645.1
+P10602,16,Male,20.2,Normal,No,No,East,2020-10-02,2020-10-04,Hypertension,3138.38
+P10603,65,Male,26.7,High Stage 2,No,No,North,2020-10-03,2020-10-05,Cardiac,5969.14
+P10604,26,Female,29.8,High Stage 2,No,No,North,2020-10-03,2020-10-05,Fracture,867.58
+P10605,86,Female,23.0,Elevated,No,No,East,2020-10-04,2020-10-06,Pneumonia,4599.83
+P10606,85,Female,21.7,Normal,No,No,West,2020-10-04,2020-10-06,Fracture,2668.92
+P10607,87,Male,25.2,Normal,No,No,West,2020-10-05,2020-10-07,Pneumonia,5061.0
+P10608,6,Female,29.8,Normal,No,No,Central,2020-10-05,2020-10-07,Appendicitis,7591.83
+P10609,26,Male,26.7,Normal,No,No,North,2020-10-06,2020-10-08,Cardiac,2570.05
+P10610,37,Female,42.0,High Stage 2,No,No,East,2020-10-06,2020-10-08,Cardiac,1040.59
+P10611,90,Male,26.8,Elevated,No,No,North,2020-10-07,2020-10-09,Diabetes,391.43
+P10612,63,Female,31.6,Normal,No,No,South,2020-10-07,2020-10-09,Hypertension,5049.84
+P10613,93,Female,19.5,High Stage 1,Yes,No,West,2020-10-07,2020-10-09,Appendicitis,4801.26
+P10614,82,Male,30.7,Normal,No,No,East,2020-10-08,2020-10-10,Diabetes,6770.51
+P10615,27,Female,25.0,Elevated,No,No,South,2020-10-08,2020-10-10,Fracture,11335.27
+P10616,18,Male,27.4,Normal,No,Yes,North,2020-10-09,2020-10-11,Appendicitis,5298.07
+P10617,59,Male,36.8,Normal,No,No,North,2020-10-09,2020-10-11,Pneumonia,1686.27
+P10618,74,Male,25.5,Normal,No,No,East,2020-10-10,2020-10-12,Pneumonia,3588.2
+P10619,21,Female,20.3,Normal,No,No,Central,2020-10-10,2020-10-12,Appendicitis,268.24
+P10620,64,Male,21.2,High Stage 2,No,No,South,2020-10-11,2020-10-13,Pneumonia,6882.17
+P10621,38,Male,28.5,High Stage 2,No,No,North,2020-10-11,2020-10-13,Cardiac,5892.56
+P10622,74,Female,28.2,Elevated,Yes,No,South,2020-10-12,2020-10-14,Diabetes,546.86
+P10623,59,Male,27.9,High Stage 1,No,No,West,2020-10-12,2020-10-14,Fracture,4614.5
+P10624,66,Male,20.4,Normal,No,No,South,2020-10-13,2020-10-15,Fracture,7962.13
+P10625,4,Male,38.6,Normal,No,No,Central,2020-10-13,2020-10-15,Appendicitis,13954.68
+P10626,80,Male,35.6,Normal,No,No,North,2020-10-13,2020-10-15,Cardiac,3128.9
+P10627,61,Female,28.2,Normal,No,Yes,South,2020-10-14,2020-10-16,Fracture,3561.54
+P10628,19,Female,19.1,Normal,No,No,South,2020-10-14,2020-10-16,Cardiac,2940.8
+P10629,46,Female,36.2,High Stage 1,Yes,No,East,2020-10-15,2020-10-17,Pneumonia,564.1
+P10630,27,Male,33.8,High Stage 1,No,No,South,2020-10-15,2020-10-17,Diabetes,1895.99
+P10631,12,Female,28.1,Normal,No,Yes,East,2020-10-16,2020-10-18,Cardiac,2217.25
+P10632,45,Male,34.1,Normal,No,No,South,2020-10-16,2020-10-18,Diabetes,870.8
+P10633,65,Male,24.8,Elevated,No,No,South,2020-10-17,2020-10-19,Appendicitis,3046.92
+P10634,74,Female,22.2,High Stage 2,No,No,West,2020-10-17,2020-10-19,Cardiac,6150.71
+P10635,89,Female,28.4,Normal,No,No,South,2020-10-18,2020-10-20,Appendicitis,13451.25
+P10636,60,Female,19.0,Normal,No,No,Central,2020-10-18,2020-10-20,Pneumonia,1645.4
+P10637,1,Male,21.4,High Stage 2,No,No,Central,2020-10-18,2020-10-20,Cardiac,1751.6
+P10638,38,Male,30.5,Elevated,No,No,South,2020-10-19,2020-10-21,Diabetes,5912.85
+P10639,42,Female,28.8,High Stage 1,Yes,No,South,2020-10-19,2020-10-21,Diabetes,3654.05
+P10640,93,Female,19.9,Elevated,No,No,Central,2020-10-20,2020-10-22,Pneumonia,1106.73
+P10641,12,Female,25.3,High Stage 2,No,No,Central,2020-10-20,2020-10-22,Appendicitis,1471.03
+P10642,84,Male,20.1,High Stage 1,No,No,East,2020-10-21,2020-10-23,Diabetes,2083.11
+P10643,20,Female,24.8,Normal,No,No,East,2020-10-21,2020-10-23,Pneumonia,482.46
+P10644,63,Male,24.2,Normal,No,No,South,2020-10-22,2020-10-24,Appendicitis,3318.33
+P10645,47,Male,33.0,Elevated,No,Yes,West,2020-10-22,2020-10-24,Pneumonia,200.0
+P10646,92,Female,26.6,Normal,No,No,Central,2020-10-23,2020-10-25,Hypertension,5023.35
+P10647,28,Female,26.2,Normal,No,No,East,2020-10-23,2020-10-25,Cardiac,2641.21
+P10648,45,Female,25.3,Normal,Yes,No,East,2020-10-24,2020-10-26,Fracture,4834.11
+P10649,62,Male,18.0,Normal,No,No,East,2020-10-24,2020-10-26,Fracture,380.56
+P10650,18,Male,27.0,High Stage 1,No,No,Central,2020-10-24,2020-10-26,Pneumonia,12833.47
+P10651,25,Female,30.2,Normal,No,Yes,East,2020-10-25,2020-10-27,Diabetes,448.79
+P10652,71,Female,28.8,Normal,No,No,East,2020-10-25,2020-10-27,Hypertension,2778.31
+P10653,73,Female,31.3,Elevated,No,No,East,2020-10-26,2020-10-28,Cardiac,6748.77
+P10654,64,Female,31.6,Elevated,No,No,North,2020-10-26,2020-10-28,Appendicitis,1256.62
+P10655,18,Female,39.6,Normal,No,No,Central,2020-10-27,2020-10-29,Diabetes,3547.47
+P10656,21,Female,21.3,Normal,No,No,South,2020-10-27,2020-10-29,Pneumonia,5797.31
+P10657,86,Male,28.8,Normal,No,No,Central,2020-10-28,2020-10-30,Appendicitis,3197.94
+P10658,85,Male,29.4,High Stage 1,No,No,South,2020-10-28,2020-10-30,Cardiac,10332.3
+P10659,38,Female,25.7,Normal,No,Yes,South,2020-10-29,2020-10-31,Cardiac,1138.53
+P10660,52,Female,24.0,Elevated,No,No,Central,2020-10-29,2020-10-31,Hypertension,329.51
+P10661,6,Male,30.2,High Stage 2,No,No,North,2020-10-29,2020-10-31,Appendicitis,3476.64
+P10662,62,Female,29.7,Normal,No,Yes,West,2020-10-30,2020-11-01,Hypertension,2423.26
+P10663,10,Male,21.7,High Stage 1,No,No,Central,2020-10-30,2020-11-01,Pneumonia,6952.51
+P10664,9,Female,17.6,High Stage 1,No,No,South,2020-10-31,2020-11-02,Pneumonia,4285.32
+P10665,51,Female,24.8,Elevated,No,No,South,2020-10-31,2020-11-02,Cardiac,7313.69
+P10666,80,Female,23.8,High Stage 2,Yes,No,South,2020-11-01,2020-11-03,Pneumonia,5857.4
+P10667,86,Male,30.8,Normal,No,No,Central,2020-11-01,2020-11-03,Fracture,4968.61
+P10668,41,Female,22.4,High Stage 1,Yes,No,South,2020-11-02,2020-11-04,Pneumonia,1114.8
+P10669,49,Male,26.5,Normal,No,No,North,2020-11-02,2020-11-04,Hypertension,583.08
+P10670,52,Female,18.1,Normal,No,Yes,East,2020-11-03,2020-11-05,Hypertension,1305.81
+P10671,43,Male,19.0,Normal,No,No,North,2020-11-03,2020-11-05,Appendicitis,6092.73
+P10672,68,Male,23.3,Elevated,No,Yes,East,2020-11-04,2020-11-06,Fracture,5938.31
+P10673,73,Female,26.1,Normal,No,No,North,2020-11-04,2020-11-06,Appendicitis,11655.07
+P10674,44,Male,23.0,Normal,Yes,No,South,2020-11-04,2020-11-06,Fracture,2296.89
+P10675,22,Female,28.3,Normal,No,No,North,2020-11-05,2020-11-07,Cardiac,2530.14
+P10676,79,Female,18.1,Normal,No,No,North,2020-11-05,2020-11-07,Diabetes,1730.75
+P10677,64,Male,26.3,Normal,Yes,No,West,2020-11-06,2020-11-08,Fracture,11988.37
+P10678,39,Male,26.4,Elevated,Yes,No,Central,2020-11-06,2020-11-08,Diabetes,2661.89
+P10679,21,Male,19.5,Elevated,No,No,South,2020-11-07,2020-11-09,Hypertension,3504.15
+P10680,39,Female,28.8,Elevated,No,No,North,2020-11-07,2020-11-09,Hypertension,774.8
+P10681,80,Male,15.6,Elevated,No,No,Central,2020-11-08,2020-11-10,Hypertension,3258.2
+P10682,32,Male,23.7,Normal,No,No,East,2020-11-08,2020-11-10,Hypertension,727.66
+P10683,83,Male,31.8,Normal,Yes,No,South,2020-11-09,2020-11-11,Fracture,2743.04
+P10684,24,Male,15.3,High Stage 1,Yes,No,West,2020-11-09,2020-11-11,Fracture,2762.39
+P10685,19,Male,31.2,Elevated,Yes,No,West,2020-11-09,2020-11-11,Appendicitis,1988.55
+P10686,7,Male,21.1,Elevated,No,Yes,West,2020-11-10,2020-11-12,Appendicitis,4188.38
+P10687,14,Male,24.3,Normal,No,No,West,2020-11-10,2020-11-12,Pneumonia,11332.9
+P10688,25,Male,35.2,Normal,No,Yes,North,2020-11-11,2020-11-13,Pneumonia,643.42
+P10689,68,Male,24.1,Normal,No,No,South,2020-11-11,2020-11-13,Diabetes,1793.14
+P10690,50,Female,36.4,Elevated,No,No,West,2020-11-12,2020-11-14,Diabetes,1195.03
+P10691,62,Male,25.8,High Stage 2,No,No,Central,2020-11-12,2020-11-14,Diabetes,200.0
+P10692,10,Male,27.0,Elevated,Yes,No,West,2020-11-13,2020-11-15,Fracture,4128.86
+P10693,59,Female,32.1,High Stage 1,No,No,South,2020-11-13,2020-11-15,Fracture,2143.66
+P10694,62,Other,30.5,Elevated,Yes,No,Central,2020-11-14,2020-11-16,Diabetes,17391.85
+P10695,48,Other,28.3,High Stage 2,No,No,East,2020-11-14,2020-11-16,Fracture,7996.05
+P10696,60,Female,25.0,High Stage 1,No,No,North,2020-11-15,2020-11-17,Hypertension,18899.52
+P10697,13,Male,19.0,Normal,Yes,No,South,2020-11-15,2020-11-17,Cardiac,200.0
+P10698,47,Female,19.2,Normal,Yes,Yes,Central,2020-11-15,2020-11-17,Appendicitis,707.13
+P10699,68,Female,34.7,High Stage 2,Yes,Yes,East,2020-11-16,2020-11-18,Cardiac,200.0
+P10700,13,Other,36.8,Elevated,Yes,No,East,2020-11-16,2020-11-18,Diabetes,8724.79
+P10701,16,Female,28.2,Normal,Yes,No,North,2020-11-17,2020-11-19,Pneumonia,1112.06
+P10702,71,Female,17.7,High Stage 1,Yes,Yes,West,2020-11-17,2020-11-19,Appendicitis,898.43
+P10703,52,Male,23.3,Normal,Yes,No,South,2020-11-18,2020-11-20,Fracture,200.0
+P10704,21,Male,23.0,High Stage 1,Yes,No,North,2020-11-18,2020-11-20,Cardiac,326.0
+P10705,33,Female,24.4,Elevated,No,No,Central,2020-11-19,2020-11-21,Diabetes,2336.5
+P10706,83,Other,22.6,High Stage 1,No,No,East,2020-11-19,2020-11-21,Diabetes,2927.23
+P10707,32,Male,30.4,Elevated,No,Yes,Central,2020-11-20,2020-11-22,Pneumonia,1354.45
+P10708,34,Male,28.9,Normal,No,Yes,West,2020-11-20,2020-11-22,Fracture,9083.47
+P10709,79,Male,36.2,High Stage 2,No,No,Central,2020-11-20,2020-11-22,Pneumonia,329.96
+P10710,20,Male,25.4,Normal,No,No,East,2020-11-21,2020-11-23,Cardiac,1698.92
+P10711,43,Female,28.6,High Stage 1,No,No,West,2020-11-21,2020-11-23,Diabetes,15418.32
+P10712,30,Male,31.6,Normal,No,No,Central,2020-11-22,2020-11-24,Appendicitis,4478.77
+P10713,47,Male,33.1,Normal,Yes,No,West,2020-11-22,2020-11-24,Diabetes,3730.95
+P10714,25,Male,20.7,High Stage 1,No,No,West,2020-11-23,2020-11-25,Hypertension,5374.6
+P10715,85,Female,29.7,Elevated,No,No,Central,2020-11-23,2020-11-25,Appendicitis,782.17
+P10716,13,Female,28.3,High Stage 2,No,No,South,2020-11-24,2020-11-26,Pneumonia,2789.41
+P10717,53,Male,29.2,High Stage 1,No,No,East,2020-11-24,2020-11-26,Pneumonia,4382.17
+P10718,60,Female,27.8,Normal,No,No,West,2020-11-25,2020-11-27,Fracture,1383.74
+P10719,76,Female,36.9,High Stage 1,No,No,Central,2020-11-25,2020-11-27,Fracture,1009.61
+P10720,10,Male,22.6,High Stage 2,No,No,West,2020-11-26,2020-11-28,Appendicitis,4014.0
+P10721,82,Male,22.3,High Stage 2,Yes,No,East,2020-11-26,2020-11-28,Pneumonia,16408.61
+P10722,24,Male,23.0,High Stage 2,No,Yes,West,2020-11-26,2020-11-28,Hypertension,6047.73
+P10723,66,Male,25.9,Elevated,No,No,East,2020-11-27,2020-11-29,Pneumonia,11672.92
+P10724,5,Male,29.1,High Stage 1,No,No,East,2020-11-27,2020-11-29,Hypertension,3771.49
+P10725,14,Male,25.0,Elevated,No,No,East,2020-11-28,2020-11-30,Diabetes,8676.79
+P10726,50,Male,33.0,Normal,No,Yes,West,2020-11-28,2020-11-30,Cardiac,2687.48
+P10727,12,Male,27.5,High Stage 1,No,Yes,North,2020-11-29,2020-12-01,Cardiac,657.15
+P10728,42,Female,27.0,Normal,No,No,Central,2020-11-29,2020-12-01,Cardiac,1463.99
+P10729,41,Female,20.2,Normal,No,No,North,2020-11-30,2020-12-02,Hypertension,2742.98
+P10730,45,Male,37.5,Normal,Yes,No,West,2020-11-30,2020-12-02,Cardiac,4541.44
+P10731,6,Male,27.2,Normal,No,No,Central,2020-12-01,2020-12-03,Diabetes,3692.25
+P10732,69,Female,36.5,High Stage 1,No,No,South,2020-12-01,2020-12-03,Diabetes,1149.66
+P10733,29,Male,24.1,Elevated,No,No,East,2020-12-01,2020-12-03,Pneumonia,1152.97
+P10734,68,Male,32.1,Elevated,No,No,East,2020-12-02,2020-12-04,Fracture,2555.8
+P10735,20,Male,24.4,Elevated,No,No,North,2020-12-02,2020-12-04,Fracture,4774.73
+P10736,20,Male,37.5,Elevated,No,No,West,2020-12-03,2020-12-05,Cardiac,5464.56
+P10737,4,Male,33.7,Normal,No,Yes,Central,2020-12-03,2020-12-05,Pneumonia,5025.62
+P10738,81,Female,32.2,Elevated,No,No,Central,2020-12-04,2020-12-06,Diabetes,999.96
+P10739,38,Female,23.5,Normal,No,No,Central,2020-12-04,2020-12-06,Cardiac,5540.2
+P10740,13,Female,38.0,High Stage 2,No,Yes,East,2020-12-05,2020-12-07,Appendicitis,5108.43
+P10741,24,Female,38.7,Normal,No,No,West,2020-12-05,2020-12-07,Diabetes,684.37
+P10742,13,Male,25.4,High Stage 2,No,No,South,2020-12-06,2020-12-08,Hypertension,6388.28
+P10743,10,Female,28.4,Normal,Yes,No,South,2020-12-06,2020-12-08,Hypertension,1533.47
+P10744,7,Other,32.6,Normal,No,No,Central,2020-12-07,2020-12-09,Diabetes,9158.33
+P10745,69,Female,16.7,High Stage 2,No,No,South,2020-12-07,2020-12-09,Hypertension,3548.37
+P10746,55,Female,33.8,Elevated,No,No,West,2020-12-07,2020-12-09,Cardiac,9646.94
+P10747,86,Female,33.1,Normal,Yes,Yes,Central,2020-12-08,2020-12-10,Hypertension,1275.73
+P10748,92,Male,24.4,Elevated,No,No,West,2020-12-08,2020-12-10,Cardiac,1822.31
+P10749,59,Male,15.4,Normal,No,No,North,2020-12-09,2020-12-11,Appendicitis,200.0
+P10750,51,Female,29.3,Normal,No,No,Central,2020-12-09,2020-12-11,Hypertension,4654.49
+P10751,88,Female,21.3,Normal,No,No,South,2020-12-10,2020-12-12,Fracture,1129.38
+P10752,89,Male,18.8,Normal,Yes,No,Central,2020-12-10,2020-12-12,Hypertension,3271.92
+P10753,16,Male,29.5,Normal,No,No,North,2020-12-11,2020-12-13,Diabetes,8259.49
+P10754,57,Male,34.7,Normal,No,Yes,South,2020-12-11,2020-12-13,Diabetes,4278.36
+P10755,73,Male,26.3,High Stage 1,No,No,West,2020-12-12,2020-12-14,Appendicitis,14557.73
+P10756,82,Male,34.0,Normal,No,No,North,2020-12-12,2020-12-14,Diabetes,8883.02
+P10757,39,Male,31.2,Normal,No,No,South,2020-12-12,2020-12-14,Appendicitis,3153.52
+P10758,60,Male,19.9,Normal,No,No,Central,2020-12-13,2020-12-15,Appendicitis,4878.15
+P10759,47,Female,24.5,High Stage 2,No,No,Central,2020-12-13,2020-12-15,Cardiac,2496.8
+P10760,60,Male,33.4,Normal,No,No,East,2020-12-14,2020-12-16,Pneumonia,3771.16
+P10761,63,Female,24.4,Normal,Yes,No,Central,2020-12-14,2020-12-16,Fracture,15333.66
+P10762,55,Male,32.0,High Stage 2,No,No,West,2020-12-15,2020-12-17,Appendicitis,2035.01
+P10763,74,Male,25.2,Elevated,No,No,Central,2020-12-15,2020-12-17,Appendicitis,4827.84
+P10764,7,Female,31.5,Normal,No,No,East,2020-12-16,2020-12-18,Diabetes,8427.32
+P10765,6,Other,29.9,High Stage 1,No,No,South,2020-12-16,2020-12-18,Diabetes,236.87
+P10766,79,Female,26.1,Normal,No,No,Central,2020-12-17,2020-12-19,Pneumonia,646.61
+P10767,37,Female,31.3,Normal,No,No,East,2020-12-17,2020-12-19,Cardiac,237.72
+P10768,37,Male,15.6,Elevated,No,No,East,2020-12-18,2020-12-20,Pneumonia,1916.68
+P10769,72,Male,21.5,High Stage 2,No,No,West,2020-12-18,2020-12-20,Cardiac,1299.18
+P10770,52,Female,25.0,High Stage 2,No,No,Central,2020-12-18,2020-12-20,Pneumonia,1166.84
+P10771,51,Female,33.9,Elevated,No,No,Central,2020-12-19,2020-12-21,Pneumonia,3551.19
+P10772,88,Male,19.5,Normal,No,No,South,2020-12-19,2020-12-21,Fracture,1694.36
+P10773,33,Male,27.3,Elevated,No,No,South,2020-12-20,2020-12-22,Pneumonia,5894.75
+P10774,25,Female,29.2,High Stage 2,No,Yes,Central,2020-12-20,2020-12-22,Hypertension,2760.25
+P10775,4,Male,28.9,Elevated,No,No,South,2020-12-21,2020-12-23,Pneumonia,2967.91
+P10776,89,Female,27.0,Normal,No,No,West,2020-12-21,2020-12-23,Fracture,753.15
+P10777,1,Male,24.1,High Stage 2,No,No,West,2020-12-22,2020-12-24,Pneumonia,5324.26
+P10778,40,Male,26.1,High Stage 2,No,No,East,2020-12-22,2020-12-24,Cardiac,3636.66
+P10779,40,Male,32.9,Normal,No,No,West,2020-12-23,2020-12-25,Fracture,2243.58
+P10780,88,Male,23.7,Elevated,Yes,Yes,West,2020-12-23,2020-12-25,Appendicitis,5426.4
+P10781,46,Female,15.6,High Stage 1,No,No,North,2020-12-23,2020-12-25,Appendicitis,2698.86
+P10782,1,Male,30.1,Normal,No,No,North,2020-12-24,2020-12-26,Diabetes,3392.03
+P10783,22,Female,35.7,High Stage 2,No,No,East,2020-12-24,2020-12-26,Cardiac,7838.67
+P10784,49,Female,21.7,Normal,No,Yes,Central,2020-12-25,2020-12-27,Pneumonia,5222.83
+P10785,76,Male,35.0,Normal,No,No,South,2020-12-25,2020-12-27,Appendicitis,466.08
+P10786,6,Female,30.4,High Stage 2,No,No,East,2020-12-26,2020-12-28,Hypertension,439.96
+P10787,69,Male,21.1,High Stage 2,No,No,East,2020-12-26,2020-12-28,Diabetes,3855.21
+P10788,17,Male,23.6,Normal,No,No,West,2020-12-27,2020-12-29,Cardiac,1191.69
+P10789,18,Male,23.4,High Stage 1,No,Yes,North,2020-12-27,2020-12-29,Pneumonia,533.49
+P10790,14,Female,28.4,Elevated,No,No,West,2020-12-28,2020-12-30,Hypertension,10199.19
+P10791,18,Male,26.5,High Stage 1,No,No,West,2020-12-28,2020-12-30,Pneumonia,3966.04
+P10792,58,Female,33.6,Elevated,No,No,South,2020-12-29,2020-12-31,Cardiac,1147.25
+P10793,82,Male,32.2,High Stage 2,Yes,No,North,2020-12-29,2020-12-31,Hypertension,2649.3
+P10794,7,Male,19.0,High Stage 1,No,No,West,2020-12-29,2020-12-31,Diabetes,1883.93
+P10795,87,Male,19.7,High Stage 1,Yes,No,North,2020-12-30,2021-01-01,Fracture,309.97
+P10796,21,Male,30.9,Normal,Yes,No,South,2020-12-30,2021-01-01,Fracture,10617.91
+P10797,93,Male,24.7,Normal,No,No,East,2020-12-31,2021-01-02,Hypertension,9947.0
+P10798,77,Male,26.5,Normal,No,No,North,2020-12-31,2021-01-02,Diabetes,7012.03
+P10799,65,Male,30.5,Normal,Yes,No,North,2021-01-01,2021-01-03,Pneumonia,2526.92
